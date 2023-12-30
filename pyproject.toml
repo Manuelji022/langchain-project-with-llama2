@@ -8,6 +8,10 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.12"
 langchain = "^0.0.353"
+llama-index = "^0.9.23"
+streamlit = "^1.29.0"
+vecs = "^0.4.2"
+datasets = "^2.16.0"
 
 
 [build-system]
