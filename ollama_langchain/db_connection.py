@@ -5,9 +5,6 @@ from langchain.vectorstores import MongoDBAtlasVectorSearch
 
 load_dotenv()
 connection_string = os.getenv("MONGODB_CONNECTION")
-db_name = os.getenv("DB_NAME")
-collection_name = os.getenv("COLLECTION_NAME")
-index_name = os.getenv("INDEX_NAME")
 
 
 client = MongoClient(connection_string.mongodb_conn_string)
