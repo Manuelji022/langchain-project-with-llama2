@@ -1,4 +1,5 @@
 from langchain.embeddings import OllamaEmbeddings
+from langchain.llms import Ollama
 
 class ollama_embeddings():
     """Get the embeddings for the text.
@@ -10,6 +11,6 @@ class ollama_embeddings():
         self.model = "llama2:7b"
 
     def get_embeddings(self, text):
-        embeddings = OllamaEmbeddings(model=self.model)
-        query_result = embeddings.embed_query(text)
-        return query_result
+        embeddings_model = OllamaEmbeddings(model=self.model)
+        embeddings = embeddings_model.embed_query(text)
+        return embeddings
