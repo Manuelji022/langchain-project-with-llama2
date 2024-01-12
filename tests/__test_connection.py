@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch, MagicMock
-from ollama_langchain.db_connection import DBConnection
+from src.db.mongodb_connection import DBConnection
 
 class TestDBConnection(unittest.TestCase):
     @patch('pymongo.MongoClient')
